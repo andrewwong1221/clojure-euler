@@ -1,10 +1,11 @@
 # Euler
 
-A Clojure library designed to ... well, that part is up to you.
+Project Euler in Clojure.
 
 ## Usage
 
-FIXME
+Run tests with:
+$ lein test
 
 ## License
 
