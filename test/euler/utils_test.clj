@@ -31,3 +31,23 @@
     (is (is-palindrome? 1221))
     (is (is-palindrome? 0))
     (is (is-palindrome? 906609))))
+
+(deftest proper-divisors-test
+  (testing "proper-divisors"
+    (is (= (proper-divisors 10) '(1 2 5)))
+    (is (= (proper-divisors 220)) '(1 2 4 5 10 11 20 22 44 55 110))))
+
+(deftest amicable-number-test
+  (testing  "amicable-number"
+    (is (= 284 (amicable-number 220)))
+    (is (= 220 (amicable-number 284)))))
+
+(deftest without-nth-test
+  (testing "without-nth"
+    (let [testseq '(1 2 3 4 5)]
+      (is (= (without-nth testseq 2) '(1 2 4 5)))
+      (is (= (without-nth testseq 0) '(2 3 4 5)))
+      (is (= (without-nth testseq 4) '(1 2 3 4)))
+      (is (= (without-nth testseq 5) '(1 2 3 4 5)))
+      (is (= (without-nth testseq -15) '(1 2 3 4 5)))
+      (is (= (without-nth testseq -1) '(1 2 3 4))))))

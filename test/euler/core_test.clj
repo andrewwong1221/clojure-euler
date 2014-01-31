@@ -48,7 +48,7 @@
 
 (deftest test12
   (testing "Problem 12"
-    (is (= 765765000 (prob12)))))
+    (is (= 76576500 (prob12)))))
 
 (deftest test13
   (testing "Problem 13"
@@ -74,10 +74,14 @@
   (testing "Problem 18"
     (is (= 1074 (prob18)))))
 
-(deftest test19
+(comment (deftest test19
   (testing "Problem 19"
-    (is (= 1074 (prob19)))))
+    (is (= 1074 (prob19))))))
 
 (deftest test20
   (testing "Problem 20"
     (is (= 648 (prob20)))))
+
+(deftest test21
+  (testing "Problem 21"
+    (is (= 31626 (prob21)))))
